@@ -16,7 +16,7 @@ If you prefer to start with free hosting, tell me before creating a paid service
 
 ## 2. Put the website files in GitHub
 
-Your existing repository is [nazmus-saqib/PMCoursesByIbrahim](https://github.com/nazmus-saqib/PMCoursesByIbrahim). The built files are currently in this workspace, not yet in GitHub.
+Your existing repository is [nazmus-saqib/PMCoursesByIbrahim](https://github.com/nazmus-saqib/PMCoursesByIbrahim). The source and prepared GitHub Pages demo have been committed and pushed to `main`. The repository README includes a screenshot; enabling Pages in repository settings remains a separate step. The instructions below are for uploading a later replacement manually if needed.
 
 1. Download and extract `learn-x-website.zip` supplied in this chat.
 2. Sign in to GitHub and open that repository.

@@ -1,5 +1,9 @@
 # Learn X — professional training with Ibrahim Hossain
 
+![Learn X website preview](docs/preview.png)
+
+The interactive design demo is prepared for GitHub Pages. To activate it, open [Settings → Pages](https://github.com/nazmus-saqib/PMCoursesByIbrahim/settings/pages), select **Deploy from a branch**, choose **main** and **/docs**, then save. GitHub displays the live demo address when deployment succeeds. Until then, the image above shows the design.
+
 A responsive portfolio and course website for Ibrahim Hossain, a PMP trainer with 10 years of experience. Visitors can explore Project Management, Agile, PRINCE2, and ITIL training, review learning outcomes, see published class dates, and send an enrollment request for personal follow-up. Requests are saved to a private SQLite database. Sending a request does not take payment, reserve a confirmed seat, or send an email automatically. The current contact address is saqib.bd.ca@gmail.com. The preferred domain is learnx.ca; availability, purchase, and connection remain pending.
 
 The website has been prepared for development and deployment. It is not automatically published by creating these files.
