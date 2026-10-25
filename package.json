@@ -1,0 +1,37 @@
+{
+  "name": "learn-x-training",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=24 <25"
+  },
+  "scripts": {
+    "dev": "concurrently -k -n api,web \"npm:dev:api\" \"npm:dev:web\"",
+    "dev:api": "node --watch server/index.mjs",
+    "dev:web": "vite --host 0.0.0.0",
+    "build": "tsc -b && vite build",
+    "demo": "vite build --mode demo --outDir demo-dist && node scripts/build-demo.mjs",
+    "demo:pages": "npm run demo && node scripts/prepare-pages.mjs",
+    "start": "node server/index.mjs",
+    "test": "node --test server/*.test.mjs",
+    "check": "tsc -b"
+  },
+  "dependencies": {
+    "@fontsource/dm-serif-display": "^5.2.8",
+    "@fontsource-variable/dm-sans": "^5.2.8",
+    "express": "^5.1.0",
+    "lucide-react": "^0.468.0",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "@types/react": "^19.1.0",
+    "@types/react-dom": "^19.1.0",
+    "@vitejs/plugin-react": "^4.5.0",
+    "concurrently": "^9.1.2",
+    "typescript": "~5.8.3",
+    "vite": "^6.3.5"
+  }
+}

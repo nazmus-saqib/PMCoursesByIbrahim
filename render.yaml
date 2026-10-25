@@ -1,0 +1,26 @@
+# Creating this Blueprint provisions paid hosting and a persistent disk.
+# Review current Render prices before approving creation in your own account.
+services:
+  - type: web
+    name: learn-x-training
+    runtime: node
+    plan: starter
+    buildCommand: npm ci --include=dev --no-audit --no-fund && npm run build
+    startCommand: npm start
+    healthCheckPath: /api/health
+    autoDeployTrigger: commit
+    envVars:
+      - key: NODE_VERSION
+        value: 24.19.0
+      - key: NODE_ENV
+        value: production
+      - key: HOST
+        value: 0.0.0.0
+      - key: TRUST_PROXY
+        value: "1"
+      - key: DATA_DIR
+        value: /var/data
+    disk:
+      name: enrollment-data
+      mountPath: /var/data
+      sizeGB: 1
